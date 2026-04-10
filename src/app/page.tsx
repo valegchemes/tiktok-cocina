@@ -16,7 +16,7 @@ export default async function Home() {
   });
 
   // Map Prisma data to what VideoFeed expects (until we unify types)
-  const initialVideos = videos.map((v) => ({
+      const initialVideos = videos.map((v: any) => ({
     id: v.id,
     url: v.videoUrl,
     title: v.title,

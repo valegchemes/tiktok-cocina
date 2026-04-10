@@ -40,8 +40,8 @@ export default async function ExplorePage({
 
   // Flatten and count tags
   const tagCount: Record<string, number> = {};
-  popularTags.forEach((v) => {
-    v.tags.forEach((t) => {
+  popularTags.forEach((v: any) => {
+    v.tags.forEach((t: any) => {
       tagCount[t] = (tagCount[t] || 0) + 1;
     });
   });

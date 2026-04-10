@@ -25,7 +25,7 @@ export default async function SavedPage() {
     },
   });
 
-  const videos = savedVideos.map((s) => s.video);
+    const videos = savedVideos.map((s: any) => s.video);
 
   return <SavedClient videos={videos} />;
 }
